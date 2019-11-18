@@ -9,7 +9,7 @@ def Tab_Scatter(df):
     return dcc.Tab(label = 'Trading Chart', value = 'tab-tiga', children = [
         html.Div(children = dcc.Graph(
         id = 'graph-scatter',
-        figure = {
+        figure = {  
             'data' : [
                 go.Scatter(
                 x = df['Date'],
